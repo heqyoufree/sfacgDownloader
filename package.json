@@ -1,0 +1,32 @@
+{
+  "name": "sfacgdownloader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heqyoufree/sfacgdownloader.git"
+  },
+  "author": "goEval",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heqyoufree/sfacgdownloader/issues"
+  },
+  "homepage": "https://github.com/heqyoufree/sfacgdownloader#readme",
+  "dependencies": {
+    "@types/cheerio": "^0.22.22",
+    "@types/he": "^1.1.1",
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "axios": "^0.21.0",
+    "axios-retry": "^3.1.9",
+    "cheerio": "^1.0.0-rc.3",
+    "commander": "^6.2.0",
+    "eslint": "^7.14.0",
+    "eslint-config-google": "^0.14.0",
+    "he": "^1.2.0"
+  }
+}
