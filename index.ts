@@ -2,6 +2,7 @@ import axios from 'axios';
 import axiosRetry from 'axios-retry';
 import cheerio from 'cheerio';
 import program from 'commander';
+import fs from 'fs';
 import he from 'he';
 
 axiosRetry(axios, { retries: 100, shouldResetTimeout: true});
@@ -50,7 +51,7 @@ axios.get(`https://m.sfacg.com/i/${program.id}/`).then((value) => {
           console.log(($('.menu_top_list.book_view_top').find('li').eq(1).text()));
         }
         if (count === _('.mulu_list').find('a').length) {
-          console.log(''.concat(...download.chapters.map<string>(ele => ele.toString())))
+          fs.writeFileSync(`${program.id}.txt`, ''.concat(...download.chapters.map<string>(ele => ele.toString())));
         }
       });
       count++;
